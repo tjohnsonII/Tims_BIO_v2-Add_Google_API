@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . './client_secret_116122727779-mkp79jbsb5pr8mgtcmtt32uug3g43p9u.apps.googleusercontent.com copy.json'; // Path to the Google API PHP client library
+require_once __DIR__ . './vendor/autoload.php'; // Path to the Google API PHP client library
 
 // Initialize the Google API client
 $client = new Google_Client();
-$client->setApplicationName('Your Application Name');
+$client->setApplicationName('tims_bio_v2-add_google_api');
 $client->setScopes(Google_Service_Gmail::MAIL_GOOGLE_COM);
-$client->setAuthConfig('path/to/client_credentials.json'); // Path to your client credentials JSON file
+$client->setAuthConfig('./client_secret.json'); // Path to your client credentials JSON file
 
 // Create a new Gmail service instance
 $service = new Google_Service_Gmail($client);
