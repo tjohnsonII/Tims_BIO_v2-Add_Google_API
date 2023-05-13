@@ -24,7 +24,7 @@
 				</nav>
 		</header>
   <main>
-    <form id="contact-form" action="./index.html" method="POST" netlify>
+    <form id="contact-form" action="./submit_form.php" method="POST" netlify>
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -37,7 +37,7 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <button id="submit" onclick="sendFormData(event)" type="submit">Send Message</button>
+      <button id="submit" type="submit">Send Message</button>
     </form>
   </main>
   <footer id="footer_op">
