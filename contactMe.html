@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head id="head_op">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Tim's Page</title>
+		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<script src="./scripts/script.js"></script>
+    <script src="./scripts/script2.js"></script>
+    <script src="./scripts/script3.js"></script>
+	</head>
+	
+	<body id="body_op">
+		<!-- Content -->
+		<header id="header_op">
+			<div id="logo"></div>
+				<nav>  
+					<ul>
+						<li><a href="./index.html">Home</a>
+            <li><a href="./course.html">Portfolio</a>
+            <li><a href="./ipCalculator.html">IP Calculator</a></li>
+            <li><a href="./contactMe.html">Contact Me</a></li>
+					</ul>
+				</nav>
+		</header>
+  <main>
+    <form id="contact-form" action=".scripts/submit_form.php" method="POST" netlify>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button id="submit" onclick="sendFormData(event)" type="submit">Send Message</button>
+    </form>
+  </main>
+  <footer id="footer_op">
+    <address>
+    Contact <a href="mailto:timothyallenjohnsonii@gmail.com">Email Me at timothyallenjohnsonii@gmail.com</a>
+    </address>
+</footer>
+</body>
+</html>

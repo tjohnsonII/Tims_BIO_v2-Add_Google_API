@@ -1,0 +1,15 @@
+{
+    "name": "tim2/tims_bio_v2-add_google_api",
+    "description": "website app",
+    "type": "project",
+    "license": "free",
+    "authors": [
+        {
+            "name": "tim johnson"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "google/apiclient": "^2.0"
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head id="head_op">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Tim's Page</title>
+		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<script src="./scripts/script.js"></script>
+		<script src="./scripts/script2.js"></script>
+		<script src="./scripts/script3.js"></script>
+	</head>
+	
+	<body id="body_op">
+		<!-- Content -->
+		<header id="header_op">
+			<div id="logo"></div>
+				<nav>  
+					<ul>
+						<li><a href="./index.html">Home</a>
+						<li><a href="./course.html">Portfolio</a>
+						<li><a href="./ipCalculator.html">IP Calculator</a></li>
+						<li><a href="./contactMe.html">Contact Me</a></li>
+					</ul>
+				</nav>
+		</header>
+		
+		<main id="main_op">
+			<article id="article1_op">
+				
+			</article>
+			
+			<article id="article2_op">
+				
+			  <h2>Network Subnetting</h2>
+			  
+			  <div class="ip-address">
+				<select id="octet1" name="octet1"></select>
+				.
+				<select id="octet2" name="octet2"></select>
+				.
+				<select id="octet3" name="octet3"></select>
+				.
+				<select id="octet4" name="octet4"></select>
+			  </div>
+			  
+			  <div class="netmask">
+				<select id="nOctet1" name="nOctet1"></select>
+				.
+				<select id="nOctet2" name="nOctet2"></select>
+				.
+				<select id="nOctet3" name="nOctet3"></select>
+				.
+				<select id="nOctet4" name="nOctet4"></select>
+			  </div>
+			  <button id="convertBtn">Convert to Binary</button>
+
+			  <div id="result"></div>
+			  <div id="result2"></div>
+			  <div id="result3"></div>
+			</article>
+
+		</main>
+		
+		<section id="section_op">
+			<h1>Senior Project</h1>
+			<p>A proxmity sensored paired with and LED lighting array to simulate a saftey braking alert system</p>
+				<div class="video-player">
+				<video src="../images/sp.mp4" id="myVideo" controls></video>
+					<div class="video-player-controls">
+					  <button onclick="playVideo()" id="playButton">Play</button>
+					  <button onclick="pauseVideo()" id="pauseButton">Pause</button>
+					  <button onclick="stopVideo()" id="stopButton">Stop</button>
+					</div>
+			  </div>
+		</section>
+		
+
+		<aside id="aside_op">
+			<button id="button_op" type="button" class="scroll-top-button" onclick="scrollToTop()";>Back To The Top!</button>
+		</aside>
+		
+		<footer id="footer_op">
+			<address>
+			Contact <a href="mailto:timothyallenjohnsonii@gmail.com">Email Me at timothyallenjohnsonii@gmail.com</a>
+			</address>
+		</footer>
+	</body>
+</html>

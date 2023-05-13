@@ -1,0 +1,353 @@
+/* Common styles for all devices */
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  /* For example: */
+  #body_op {
+  background: #62A421; /* Fallback color */
+  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+}
+  
+  /* Styles for specific elements */
+  #header_op {
+    padding: 10px;
+
+    background: #62A421; /* Fallback color */
+    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+
+    border-width: 30px;
+    border-style: inset;
+    border-color: #006633;
+    position: sticky;
+    top: 0;
+  }
+  
+    /* Style for the navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+nav li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+  
+  /* ... */
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet-specific styles here */
+  /* For example: */
+  #body_op {
+    background: #62A421; /* Fallback color */
+    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  }
+  
+  /* Styles for specific elements */
+  #header_op {
+    padding: 20px;
+    padding: 10px;
+
+    background: #62A421; /* Fallback color */
+    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+
+    border-width: 30px;
+    border-style: inset;
+    border-color: #006633;
+    position: sticky;
+    top: 0;
+  }
+  
+    /* Style for the navigation */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+    }
+    
+    nav li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    nav li a:hover {
+      background-color: #f2f2f2;
+      color: #000;
+    }
+  
+  /* ... */
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  /* Add your desktop-specific styles here */
+  /* For example: */
+  #body_op {
+  background: #62A421; /* Fallback color */
+  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+}
+  
+  /* Styles for specific elements */
+  #header_op {
+    font-size: 50px;
+
+    background: #62A421; /* Fallback color */
+    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+
+    border-width: 30px;
+    border-style: inset;
+    border-color: #006633;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Style for the navigation */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+span{
+	font-size: 62px;
+	text-align: center;
+}
+/* Style for the image */
+img {
+  border-width: 30px;
+	border-style: inset;
+	border-color: #006633;
+}
+
+#article1_summary {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 20px;
+
+
+}
+
+#article1_op {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 20px;
+
+
+}
+#article2_op {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  border-width: 30px;
+  border-style: inset;
+  border-color: #006633;
+}
+
+.ip-address {
+  display: center;
+  align-items: center;
+}
+
+.ip-address select {
+  margin-right: 5px;
+}
+
+.netmask {
+  display: center;
+  align-items: center;
+}
+
+.netmask select {
+  margin-right: 5px;
+}
+#homePageTable {
+  border-width: 30px;
+	border-style: inset;
+	border-color: #006633;
+  width: 100%;
+}
+
+#homePageTable th, #homePageTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+#homePageTable th {
+background: #62A421; /* Fallback color */
+  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+	border-width: 30px;
+	border-style: inset;
+	border-color: #006633;
+}
+
+#section_op  {
+	
+	
+	font-size: 45px;
+	text-align: center;
+	
+	background: #62A421; /* Fallback color */
+	background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+	background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+	background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+	border-width: 30px;
+	border-style: inset;
+	border-color: #006633;
+}
+/* Customize the video player */
+.video-player {
+  /* Add your custom styles here */
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Customize the video controls */
+.video-player-controls {
+  /* Add your custom styles here */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+}
+/* Customize other aspects of the video player as needed */
+
+.video-player-controls button {
+  /* Add your custom styles here */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Add active state styles for the buttons */
+.video-player-controls button.active {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Styles for the aside element */
+#aside_op {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+/* Styles for the button */
+#button_op {
+  background-color: #1C6EA4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#button_op:hover {
+  background-color: #235484;
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.scroll-top-button.show {
+  display: block;
+}
+
+
+#footer_op{
+	font-size: 35px;
+	background: #62A421; /* Fallback color */
+  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+	
+	border-width: 30px;
+	border-style: inset;
+	border-color: #006633;
+}
+  /* ... */
+}
+
+/* Common styles for all devices */
+
+/* Additional common styles for all devices */
