@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     // Attach event listener to the form submit event
-    //var form = document.getElementById('contact-form');
-    //form.addEventListener('submit', sendFormData);
+    var form = document.getElementById('contact-form');
+    form.addEventListener('submit', sendFormData);
   });
   
