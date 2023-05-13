@@ -1,11 +1,14 @@
 <?php
-require_once __DIR__ . './vendor/autoload.php'; // Path to the Google API PHP client library
+require_once __DIR__ . '/vendor/autoload.php'; // Path to the Google API PHP client library
 
 // Initialize the Google API client
 $client = new Google_Client();
 $client->setApplicationName('tims_bio_v2-add_google_api');
 $client->setScopes(Google_Service_Gmail::MAIL_GOOGLE_COM);
-$client->setAuthConfig('./client_secret.json'); // Path to your client credentials JSON file
+$client->setClientId('116122727779-mkp79jbsb5pr8mgtcmtt32uug3g43p9u.apps.googleusercontent.com');
+$client->setClientSecret('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');
+$client->setRedirectUri('https://your-redirect-uri.com'); // Replace with your actual redirect URI
+$client->setAccessType('offline');
 
 // Create a new Gmail service instance
 $service = new Google_Service_Gmail($client);
@@ -25,20 +28,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "<p>Please enter a valid email address.</p>";
-    header("Location: index.html"); // Redirect to index.html
+    header("Location: https://timothyallenjohnsonii-bio.netlify.app/index.html"); // Redirect to index.html
     exit();
   }
 
   // Prepare the email message
   $emailSubject = "New Contact Form Submission";
   $emailContent = "Name: $name\nEmail: $email\nMessage: $message";
-  $emailTo = "recipient@gmail.com"; // Replace with your desired recipient email address
+  $emailTo = "timothyallenjohnsonii@gmail.com"; // Replace with your desired recipient email address
 
   try {
     // Create a new Gmail message
     $message = new Google_Service_Gmail_Message();
-    $email->setSubject($emailSubject);
-    $email->setRaw(base64_encode("To: $emailTo\r\n" .
+    $message->setRaw(base64_encode("To: $emailTo\r\n" .
       "Subject: $emailSubject\r\n" .
       "Content-Type: text/plain; charset=utf-8\r\n\r\n" .
       $emailContent));
