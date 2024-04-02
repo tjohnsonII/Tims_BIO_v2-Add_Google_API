@@ -1,146 +1,35 @@
+
+     /* Reset CSS */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
 /* Common styles for all devices */
-
-/* Mobile styles */
-@media only screen and (max-width: 767px) {
-  /* Add your mobile-specific styles here */
-  /* For example: */
-  #body_op {
-  background: #62A421; /* Fallback color */
-  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-}
-  
-  /* Styles for specific elements */
-  #header_op {
-    padding: 10px;
-
-    background: #62A421; /* Fallback color */
-    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-
-    border-width: 30px;
-    border-style: inset;
-    border-color: #006633;
-    position: sticky;
-    top: 0;
-  }
-  
-    /* Style for the navigation */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-}
-
-nav li a {
-  display: block;
-  padding: 5px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-nav li a:hover {
+body {
+  font-family: Arial, sans-serif;
   background-color: #f2f2f2;
-  color: #000;
-}
-  
-  /* ... */
+  color: #333;
 }
 
-/* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Add your tablet-specific styles here */
-  /* For example: */
-  #body_op {
-    background: #62A421; /* Fallback color */
-    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  }
-  
-  /* Styles for specific elements */
-  #header_op {
-    padding: 20px;
-    padding: 10px;
-
-    background: #62A421; /* Fallback color */
-    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-
-    border-width: 30px;
-    border-style: inset;
-    border-color: #006633;
-    position: sticky;
-    top: 0;
-  }
-  
-    /* Style for the navigation */
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    nav li {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 5px;
-    }
-    
-    nav li a {
-      display: block;
-      padding: 5px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    
-    nav li a:hover {
-      background-color: #f2f2f2;
-      color: #000;
-    }
-  
-  /* ... */
-}
-
-/* Desktop styles */
-@media only screen and (min-width: 1024px) {
-  /* Add your desktop-specific styles here */
-  /* For example: */
-  #body_op {
-  background: #62A421; /* Fallback color */
-  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+/* Header styles */
+#header_op {
   background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
 }
-  
-  /* Styles for specific elements */
-  #header_op {
-    font-size: 50px;
 
-    background: #62A421; /* Fallback color */
-    background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-    background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+#logo {
+  width: 100px; /* Adjust the size of your logo */
+  height: 100px; /* Adjust the size of your logo */
+  background-image: url('./images/logo.png'); /* Replace with your logo image */
+  background-size: cover;
+  background-position: center;
+}
 
-    border-width: 30px;
-    border-style: inset;
-    border-color: #006633;
-    position: sticky;
-    top: 0;
-  }
-  
-  /* Style for the navigation */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -148,206 +37,98 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-}
-
-nav li a {
   display: inline-block;
-  padding: 10px;
+  margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+nav li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 nav li a:hover {
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: #235484; /* Darker shade for hover effect */
 }
 
-span{
-	font-size: 62px;
-	text-align: center;
-}
-/* Style for the image */
-img {
-  border-width: 30px;
-	border-style: inset;
-	border-color: #006633;
+/* Main content styles */
+#main_op {
+  padding: 20px;
 }
 
 #article1_summary {
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 1.5;
-  color: black;
-  margin-bottom: 20px;
-
-
-}
-
-#article1_op {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 1.5;
-  color: black;
-  margin-bottom: 20px;
-
-
-}
-#article2_op {
-  font-size: 45px;
-  font-weight: bold;
-  color: black;
   text-align: center;
-  border-width: 30px;
-  border-style: inset;
-  border-color: #006633;
+  margin-bottom: 30px;
 }
 
-.ip-address {
-  display: center;
-  align-items: center;
+#article1_summary img {
+  max-width: 100%; /* Ensure images are responsive */
+  border-radius: 10px; /* Add rounded corners to images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
 }
 
-.ip-address select {
-  margin-right: 5px;
+#article1_summary p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.netmask {
-  display: center;
-  align-items: center;
-}
-
-.netmask select {
-  margin-right: 5px;
-}
+/* Table styles */
 #homePageTable {
-  border-width: 30px;
-	border-style: inset;
-	border-color: #006633;
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
 }
 
-#homePageTable th, #homePageTable td {
-  border: 1px solid black;
+#homePageTable th,
+#homePageTable td {
+  border: 1px solid #ddd;
   padding: 8px;
-  text-align: left;
 }
 
 #homePageTable th {
-background: #62A421; /* Fallback color */
-  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+  background-color: #62A421;
+  color: #fff;
+}
+
+/* Section styles */
+#section_op {
   background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-	border-width: 30px;
-	border-style: inset;
-	border-color: #006633;
-}
-
-#section_op  {
-	
-	
-	font-size: 45px;
-	text-align: center;
-	
-	background: #62A421; /* Fallback color */
-	background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-	background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-	background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-	border-width: 30px;
-	border-style: inset;
-	border-color: #006633;
-}
-/* Customize the video player */
-.video-player {
-  /* Add your custom styles here */
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Customize the video controls */
-.video-player-controls {
-  /* Add your custom styles here */
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px;
-}
-/* Customize other aspects of the video player as needed */
-
-.video-player-controls button {
-  /* Add your custom styles here */
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-/* Add active state styles for the buttons */
-.video-player-controls button.active {
-  background-color: #555;
-  color: #fff;
-}
-
-/* Styles for the aside element */
-#aside_op {
-  background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-
-
-
-/* Styles for the button */
-#button_op {
+/* Button styles */
+.button_op {
   background-color: #1C6EA4;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#button_op:hover {
-  background-color: #235484;
+.button_op:hover {
+  background-color: #235484; /* Darker shade for hover effect */
 }
 
-.scroll-top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.scroll-top-button.show {
-  display: block;
-}
-
-
-#footer_op{
-	font-size: 35px;
-	background: #62A421; /* Fallback color */
-  background: -moz-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-  background: -webkit-linear-gradient(45deg, #62A421 0%, #F9E800 100%);
+/* Footer styles */
+#footer_op {
   background: linear-gradient(45deg, #62A421 0%, #F9E800 100%);
-	
-	border-width: 30px;
-	border-style: inset;
-	border-color: #006633;
-}
-  /* ... */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
-/* Common styles for all devices */
+#footer_op a {
+  color: #fff;
+}
 
-/* Additional common styles for all devices */
+#footer_op a:hover {
+  text-decoration: underline;
+}
